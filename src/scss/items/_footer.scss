@@ -1,0 +1,27 @@
+/* Подвал */
+.footer{
+    background-color: $color-one;
+    color: $color-two;
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.social-links{
+    &-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    &-item {
+        list-style: none;
+    }
+    &-href {
+        padding: 5px;
+        & i {
+            color: $color-two;
+            font-size: 24px;
+        }
+    }
+}

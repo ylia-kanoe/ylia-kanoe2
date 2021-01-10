@@ -1,0 +1,54 @@
+/* Погодный виджет */
+.weather-widget {
+    max-width: 700px;
+    & .container-item {
+        text-align: center;
+        background: #f9f9f9;
+        padding: 20px 0;
+        border-radius: $border-radius;
+    }
+}
+.temp-night, .rs{
+    color: #7c7c7c;
+    font-size: 12px;
+}
+.temp-night{
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+.days {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.cloudiness{
+    height: 70px;
+    margin: 15px 0 10px;
+}
+.clear{
+    background: url(assets/image/clear.png) no-repeat center;
+    background-size: contain;
+}
+.cloudy{
+    background: url(assets/image/cloudy.png) no-repeat center;
+    background-size: contain;
+}
+.min-cloudy{
+    background: url(assets/image/min-cloudy.png) no-repeat center;
+    background-size: contain;
+}
+.mainly-cloudy{
+    background: url(assets/image/mainly-cloudy.png) no-repeat center;
+    background-size: contain;
+}
+.rain{
+    background: url(assets/image/rain.png) no-repeat center;
+    background-size: contain;
+}
+.snow{
+    background: url(assets/image/snow.png) no-repeat center;
+    background-size: contain;
+}
+.rain-snow{
+    background: url(assets/image/rain-snow.png) no-repeat center;
+    background-size: contain;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset="utf-8">
+    <title>Хоружева Ю.И.</title>
+    <meta name="description" content="На данной странице собрана некоторая часть выполненных мною задач, увидев которые можно определить приблизительный уровень знаний в данной области.">
+    <meta name="keywords" content="Портфолио, виджеты, элементы интерфейса, js, css, scss, html, bootstrap, flex, json, epam, jquery.">
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        .container{
+            padding: 0 20px;
+        }
+        .learnjs-func__container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .learnjs-func__item {
+            width: 50%;
+        }
+    </style>
+    <div class="container">
+    <div class="learnjs-func__container">
+        
+        <div class="learnjs-func__item">
+           <!-- <p>Напишите функцию printNumbers(from, to), которая выводит число каждую секунду, начиная от from и заканчивая to.</p>
+            <p>Используя setInterval:<br>
+                printNumbers(1, 5);
+            </p>
+            <div id="id1"></div>
+            <script>
+            function printNumbers(from, to){
+                let test = setInterval(function() {
+                    document.getElementById("id1").innerHTML += from + ' ';
+                    if (from == to) {
+                        clearInterval(test);
+                        document.getElementById("id1").innerHTML += '<br>';
+                    }
+                    from++;
+                }, 1000);
+                
+            }
+           /* printNumbers(1, 5);*/
+            </script>
+            <p>Используя рекурсивный setTimeout:<br>
+                printNumbers2(5, 9);</p>
+            <div id="id2"></div>
+            <script>
+            function printNumbers2(from, to){
+                setTimeout(function run() {
+                    document.getElementById("id2").innerHTML += from + ' ';
+                    if(from < to){
+                        setTimeout(run, 1000);
+                        from++;
+                    } else if(from == to){
+                        document.getElementById("id2").innerHTML += '<br> ';
+                    }
+                }, 1000);
+            }
+            /*printNumbers2(5, 9);*/
+            </script>
+
+        </div>
+        <div class="learnjs-func__item">
+           -->
+        </div>
+    </div>
+            <style>
+                .calculator__container {
+                    width: 400px;
+                    margin: auto;
+                }
+                .calculator__item {
+                    border: 1px solid;
+                    padding: 20px;
+                    width: 91px;
+                    text-align: center;
+                }
+                .calculator__item:hover {
+                    background: #efefef;
+                    cursor: pointer;
+                }
+                .calculator__result {
+                    min-height: 30px;
+                    border: 1px solid #000;
+                    display: flex;
+                    padding: 20px;
+                }
+               
+                .calculator__numb {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .calculator__body {
+                    display: flex;
+                }
+                input {
+    width: 97px;
+}
+            </style>
+            <div class="calculator">
+                <div class="calculator__container">
+                    <div class="calculator__result">
+                        <input type="text" class="calculator__input calculator__input-one active" value="">
+                        <select name="func">
+                            <option selected value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                            </select>
+                        <input type="text" class="calculator__input calculator__input-two" value="">
+                        =
+                        <input type="text" class="calculator__output-result" value="">
+                    </div>
+
+                    <div class="calculator__body">
+                        <div class="calculator__numb"></div>
+                        <div class="calculator__func"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="calculator__item">С</div>
+            <div class="calculator__item">x<sup>2</sup></div>
+            <div class="calculator__item">%</div>
+            <div class="calculator__item">/</div>
+            <div class="calculator__item">*</div>
+            <div class="calculator__item">-</div>
+            <div class="calculator__item">+</div>
+            <div class="calculator__item">+/-</div>
+            <div class="calculator__item">.</div>
+            <div class="calculator__item">=</div>
+       
+    </div>
+</div>
+ 
+
+</body>
+
+</html>

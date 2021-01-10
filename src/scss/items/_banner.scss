@@ -1,0 +1,67 @@
+/* Изменение стилей swiper */
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: $color-two;
+    border: 1px solid $color-one;
+    border-radius: 50%;
+    opacity: 1;
+    &-active {
+        background: $color-one;
+        transform: scale(1.5);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.swiper-button-next, .swiper-button-prev {
+    &:focus{
+        outline: none;
+    }
+} 
+
+/* Стили для баннера */
+.banner {
+    padding: 20px 0 0;
+    &__item-image {
+        transform: translateY(-120px);
+        width: 100%;
+    }
+}
+.swiper-banner{
+    max-height: 600px;
+    & .swiper-button-next{
+        color: $color-arrow-banner;
+    }
+    & .swiper-button-prev{
+        color: $color-arrow-banner;
+    }
+}
+
+/* Стили для карусели продуктов */
+.swiper-carusel{
+    &.swiper-container {
+        position: inherit;
+    }
+    & .swiper-pagination-bullets {
+        position: inherit;
+        margin-top: 10px;
+    }
+}
+.product-carusel__item-image {
+    min-height: 240px;
+    width: inherit;
+    max-height: 240px;
+}
+
+/* Стили для карусели погодного виджета */
+.weather-widget {
+    & .swiper-button-next {
+        color: $color-arrow-widget;
+        right: 5px;
+    }
+    & .swiper-button-prev {
+        color: $color-arrow-widget;
+        left: 5px;
+    }
+}

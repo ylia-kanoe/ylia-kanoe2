@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='ru'>
+    <head>
+        <meta charset="utf-8">
+        <title>Модальные окна и Json</title>
+        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://unpkg.com/imask"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="product.css" rel="stylesheet"></head>
+    <body>
+        <section class="product-section">
+            <div class="container">
+                <h2 class="title-h2">Кошки на продажу</h2>
+                <div class="product__block">
+                </div>
+            </div>
+        </section>
+        <!--Модальное окно информации-->
+        <div class="modal modal__product-info">
+            <div class="modal-title"></div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-close">+</div>
+        </div> 
+        <!--Модальное окно изображения-->
+        <div class="modal modal__image-frame">
+            <div class="modal-body">
+            </div>
+            <div class="modal-close">+</div>
+        </div> 
+        <!--Модальное окно изображения-->
+        <div class="modal modal__image">
+            <div class="modal-body">
+            </div>
+            <div class="modal-close">+</div>
+        </div> 
+        <!--Модальное окно купить-->
+        <div class="modal modal__product-buy">
+            <div class="modal-title">Купить</div>
+            <div class="modal-body">
+                <form class="modal-form">
+                    <input class="modal-input" type="text" placeholder="Введите имя">
+                    <input class="modal-input" type="tel" placeholder="+7 (999) 999-99-99">
+                    <input class="modal-input modal-input-submit" type="submit">
+                </form>
+            </div>
+            <div class="modal-close">+</div>
+        </div> 
+        <div class="modal-opacity"></div>
+    <script type="text/javascript" src="product.js"></script></body>
+</html>

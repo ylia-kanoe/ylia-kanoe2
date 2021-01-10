@@ -1,0 +1,64 @@
+/* Блок текущие навыки на главной странице */
+.my-works{
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 45%;
+        padding: 10px;
+        display: flex;
+        color: $color-one;
+        border: 1px solid $color-two;
+        margin: 10px 0;
+        border-radius: $border-radius;
+        cursor: pointer;
+        &:hover {
+            color: $color-hover;
+            border-color: $color-hover;
+        }
+    }
+    &__image {
+        width: 200px;
+        & img {
+            width: inherit;
+        }
+    }
+    &__info {
+        padding: 0 20px;
+    }
+    &__title {
+        font-size: 24px;
+        margin: 0 0 15px;
+    }
+    &__text {
+        font-size: 14px;
+        & a {
+            font-weight: 700;
+            color: $color-active;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Адаптация */
+@media (max-width:1200px){
+    .my-works__title {
+        font-size: 20px;
+    }
+}
+@media (max-width:991px){
+    .my-works__item {
+        width: 100%;
+    }
+}
+@media (max-width:525px){
+    .my-works__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .my-works__image {
+        margin: 15px 0;
+    }
+}

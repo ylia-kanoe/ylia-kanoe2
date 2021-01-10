@@ -1,0 +1,58 @@
+/* Стили аккордеона */
+.accordeon__block{
+    &-title{
+        padding: 15px;
+        background: $color-one;
+        color: $color-two;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 1px 0; 
+        cursor: pointer; 
+        &:hover {
+            background: $color-hover;
+        }
+    }
+    &-info {
+        font-size: 18px;
+        padding: 0 15px;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.2s linear;
+        text-align: justify;
+        border: 1px solid $color-border;
+        border-top: none;
+        border-bottom: none;
+    }
+} 
+.accordeon__block-item:last-child .accordeon__block-info {
+    border-bottom: 1px solid $color-border;
+}
+.accordeon__block-item.active{
+    & .accordeon__block-info {
+        padding: 20px 15px;
+        visibility: visible;
+        height: auto;
+        overflow: none;
+        opacity: 1;
+    }
+    & .accordeon__block-title {
+        background: $color-active;
+    }
+}
+
+/* Адаптация */
+@media (max-width:575px){
+    .accordeon__block-title {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .accordeon__block-info{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .accordeon__block-item.active .accordeon__block-info {
+        padding: 10px;
+    }
+}

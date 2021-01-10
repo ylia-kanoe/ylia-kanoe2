@@ -1,0 +1,19 @@
+*{
+    font-family: $font-stack;
+}
+body{
+    margin: 0;
+    position: relative;
+    min-height:100vh
+}
+.container{
+    padding: 20px 10%;
+}
+a {
+    text-decoration: none;
+    color: $color-one;
+}
+input:focus{
+    outline: none;
+}
+

@@ -1,0 +1,20 @@
+/* Стилизация заголовков */
+h1 {
+    font-size: 32px;
+    margin: 20px 0;
+    font-weight: $font-weight;
+}
+h2{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: $font-weight;
+}
+h3{
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: $font-weight;
+}
+.title-h2 {
+    text-align: center;
+    color: $color-one;
+}

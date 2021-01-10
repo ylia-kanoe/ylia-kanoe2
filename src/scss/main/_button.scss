@@ -1,0 +1,19 @@
+/* Стилизация кнопок */
+.button{
+    background: $color-one;
+    color: $color-two;
+    padding: 12px 20px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    &:hover{
+        background: $color-hover;
+        cursor: pointer;
+    }
+    &:focus{
+        outline: none;
+       
+    } 
+}

@@ -1,0 +1,39 @@
+/* Шапка */
+.header{
+   background-color: $color-one;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-two;
+    }
+    &__logo {
+        max-width: 200px;
+    }    
+    & a {
+        color: $color-three;
+        font-weight: 600;
+        &:hover { 
+            color: $color-hover;  
+        }
+    }
+}
+.html-academy {
+    width: 30px;
+    cursor: zoom-in;
+    margin: 0px 10px 0;
+    vertical-align: middle;
+}
+
+/* Адаптация */
+@media (max-width:525px){
+    .header__logo {
+        max-width: 50px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+    .header__block {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='ru'>
+    <head>
+        <meta charset="utf-8">
+        <title>Swiper slider</title>
+        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="swiperSlider.css" rel="stylesheet"></head>
+    <body>
+        <section class="banner">
+            <h2 class="title-h2">Swiper баннер </h2>
+            <div class="swiper-banner swiper-container">
+                <div class="banner swiper-wrapper">
+                    <div class="swiper-slide banner__item">
+                        <img class="banner__item-image" src="assets/image/banner.jpg" alt="banner.jpg">
+                    </div>
+                    <div class="swiper-slide banner__item">
+                        <img class="banner__item-image" src="assets/image/banner2.jpg" alt="banner2.jpg">
+                    </div>
+                    <div class="swiper-slide banner__item">
+                        <img class="banner__item-image" src="assets/image/banner3.jpg" alt="banner3.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="product-carusel">
+            <div class="container">
+                <h2 class="title-h2">Swiper карусель</h2>
+                <div class="swiper-carusel swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="product-carusel__item-image modal-img" src="assets/image/sf2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="product-carusel__item-image modal-img" src="assets/image/abi3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="product-carusel__item-image modal-img" src="assets/image/may3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="product-carusel__item-image modal-img" src="assets/image/pers3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="product-carusel__item-image modal-img" src="assets/image/abi2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img class="product-carusel__item-image modal-img" src="assets/image/sf3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--Модальное окно изображения-->
+        <div class="modal modal__image">
+            <div class="modal-body">
+            </div>
+            <div class="modal-close">+</div>
+        </div> 
+        <div class="modal-opacity"></div>
+    <script type="text/javascript" src="swiperSlider.js"></script></body>
+</html>

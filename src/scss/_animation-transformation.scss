@@ -1,0 +1,94 @@
+.header__block-item h1{
+    animation: moving-title 2s  alternate;
+    transform-origin: center;
+    @keyframes moving-title {
+        0% {
+            transform: translate(200px);  
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0px);
+            transition: all 4s ease;  
+            opacity: 1;
+        }
+    }
+}
+.header__block p{
+    animation: moving-text 2s  alternate;
+    transform-origin: center;
+        
+    @keyframes moving-text {
+        0% {
+            transform: translate(-70px);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0px);
+            transition: all 3s ease;   
+            opacity: 1;
+        }
+    }
+}
+.header__logo{
+    animation: moving-button 2s  alternate;
+    transform-origin: center; 
+    @keyframes moving-button {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px); 
+            transition: transform 2s ease, opacity 2s ease, background-color 0.4s;
+            opacity: 1;
+        }
+    }
+}
+.swiper-pagination-bullet{
+    transition: .4s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+.social-links-item i {
+    transition: 1s;
+    &:hover {
+        transform: rotateY(360deg);
+        color: $color-hover;
+    } 
+}
+
+.product__block .product__block-img{
+    animation: beat 0.8s 3 alternate;
+    transform-origin: center;
+    @keyframes beat {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }    
+        100% {
+            transform: scale(1);
+        }
+    }
+} 
+
+.product__block .product__block-item i, .product__block .modal-buy{
+    animation: beat2 0.8s 3 alternate;
+    transform-origin: center;
+    @keyframes beat2 {
+        0% {
+            transform: scale(1);
+            background: $color-hover;
+        }
+        50% {
+            transform: scale(1.1);
+            background: $color-hover;
+        }    
+        100% {
+            transform: scale(1);
+            background: $color-hover;
+        }
+    }
+}
