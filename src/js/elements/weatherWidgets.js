@@ -109,12 +109,25 @@ for (var i = 0; i < jsonData.pogoda.length; i++) {
 }
 
 let swiper = new Swiper('.swiper-weather', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
     }
 });

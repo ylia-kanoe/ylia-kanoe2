@@ -2,6 +2,10 @@
 let modalInfo = document.querySelectorAll(".modal-info");
 let modalProductInfo = document.querySelector(".modal__product-info");
 
+/* Информация на главной */
+let modalHeaderInfo = document.querySelectorAll(".header__info");
+let modalHomeInfo = document.querySelector(".modal__home-info");
+
 /* Купить */
 let modalBuy = document.querySelectorAll(".modal-buy");
 let modalProductBuy = document.querySelector(".modal__product-buy");
@@ -23,7 +27,6 @@ let modal = document.querySelectorAll(".modal");
 let imageModal = (param, param2) => {
     for (let i = 0; i < param.length; i++) {
         param[i].addEventListener('click', () => {
-            console.log(param[i].getAttribute("src"));
             let imageHref = document.createElement("img");
             let ImageBlock = document.querySelector(param2 + " .modal-body");
             ImageBlock.innerHTML = "";
@@ -75,6 +78,9 @@ modalOpen(modalBuy, modalProductBuy);
 /* Открытие модалки Инфо*/
 modalOpen(modalInfo, modalProductInfo);
 
+/* Открытие модалки Инфо на главной*/
+modalOpen(modalHeaderInfo, modalHomeInfo);
+
 /* Открытие модалки изображения с разными стилями*/
 modalOpen(modalImg, modalImage);
 modalOpen(modalImgFrame, modalImageFrame);
@@ -82,15 +88,3 @@ modalOpen(modalImgFrame, modalImageFrame);
 /* Закрытие модалки при нажатии на закрыть и вне модалки*/
 modalClickOpacity(modalOpacity);
 modalClickClose(modalClose);
-
-
-/** 
- * Прототипное наследование
- * Классы
- * Асинхронность
- * Промисы/async await.
- * 
- * Куки, SessionStorage, LocalStorage
- * реализовать псевдо-корзину(пол, колчесвто, список товаров);
- * Element.insertAdjacentHTML()
- */

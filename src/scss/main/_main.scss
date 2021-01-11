@@ -17,3 +17,23 @@ input:focus{
     outline: none;
 }
 
+/* Адаптация */
+@media (max-width:525px){
+    .container{
+        padding: 20px 5%;
+    }
+}
+
+
+::-webkit-scrollbar-track {
+    background-color:$color-scrollbar-background;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $color-scrollbar;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:$color-scrollbar-hover;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}

@@ -71,6 +71,10 @@
         background: none;
         padding: 0;
     }
+    &.modal__home-info{
+        height: 100vh;
+        overflow-x: hidden;
+    }
 }
 
 /* Адаптация */
@@ -81,7 +85,6 @@
     }
     .modal.modal__image-frame{
         padding: 0;
-        width: 80%;
         & .modal-body {
             text-align: center;
         }
@@ -90,8 +93,26 @@
         }
     }
 }
+@media (max-width:425px){
+    .modal {
+        top: 0;
+        width: fit-content;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
 @media (max-width:375px){
+    .modal {
+        padding: 50px 20px;
+    }
     input.modal-input {
         min-width: 200px;
+    }
+     .modal.modal__home-info {
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    .modal__home-info .modal-body {
+        margin-bottom: 100px;
     }
 }

@@ -1,5 +1,6 @@
 import '../index.scss';
 import './elements/modal.js';
+import './elements/showMore.js';
 
 function importAll(r) {
     return r.keys().map(r);

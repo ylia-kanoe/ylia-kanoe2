@@ -14,13 +14,13 @@
         margin: 10px 0;
         border-radius: $border-radius;
         cursor: pointer;
-        &:hover {
-            color: $color-hover;
-            border-color: $color-hover;
+        &.dis-none{
+            display: none;
         }
     }
     &__image {
         width: 200px;
+        text-align: center;
         & img {
             width: inherit;
         }
@@ -36,9 +36,36 @@
         font-size: 14px;
         & a {
             font-weight: 700;
-            color: $color-active;
+            color: $color-one;
             text-decoration: underline;
+            &:hover{
+                color: $color-hover;
+            }
         }
+    }
+    &__refer {
+        width: 100px;
+        padding: 7px;
+        background: $color-one;
+        color: $color-two;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: $border-radius;
+        text-align: center;
+        &:hover{
+            background: $color-hover;
+        }
+        & a {
+            color: $color-two;
+            padding: 7px 10px;
+        }
+    }
+}
+.show-more {
+    text-align: center;
+    margin: 10px;
+    &__button {
+        max-width: 200px;
     }
 }
 

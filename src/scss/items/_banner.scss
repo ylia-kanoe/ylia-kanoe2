@@ -49,9 +49,7 @@
     }
 }
 .product-carusel__item-image {
-    min-height: 240px;
     width: inherit;
-    max-height: 240px;
 }
 
 /* Стили для карусели погодного виджета */
@@ -64,4 +62,12 @@
         color: $color-arrow-widget;
         left: 5px;
     }
+}
+
+/* Адаптация */
+@media (max-width:1200px){
+    .banner__item-image {
+        transform: none;
+    }
+    
 }
